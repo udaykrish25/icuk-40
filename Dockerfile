@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy your jar file into the container
-COPY sonarscanner-maven-basic-1.0-SNAPSHOT.jar .
+COPY target/sonarscanner-maven-basic-1.0-SNAPSHOT.jar .
 
 # Expose port if your app listens on one (optional)
 # EXPOSE 8080
